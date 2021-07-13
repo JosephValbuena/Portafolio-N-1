@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f2f2f2;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px black;
+    padding: 5px;
+    background: #f3f3f3;
+}
+
+.logo {
+    margin: 0 0 0 20px;
+    padding: 0;
+}
+
+.nameHeader {
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: coral;
+    margin: 0;
+    padding: 0;
+}
+
+.small_p {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px 0 0;
+}
+
+.links a {
+    margin: 0 15px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    color: black;
+}
+
+
+/* Saludo */
+
+.greeting {
+    margin: 12vh 5% 8vh 10%;
+    align-items: center;
+    display: flex;
+}
+
+.mi_foto {
+    border: black 1px solid;
+    padding: 5px;
+    border-radius: 50%;
+    width: 35%;
+    height: 35%;
+}
+
+.presentation {
+    margin: 10px 0 0 40px;
+}
+
+.helloW {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.nombre {
+    font-size: 40px;
+}
+
+.profession {
+    font-size: 16px;
+    font-weight: 300;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.description {
+    font-size: 18px;
+    font-weight: lighter;
+    margin-bottom: 30px;
+}
+
+.download_HV {
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 15px;
+    background: coral;
+    color: black;
+    font-weight: bold;
+}
+
+.social_links {
+    margin: 30px 0;
+}
+
+.social_links a {
+    text-decoration: none;
+    color: coral;
+    font-size: 36px;
+    margin: 0 10px 0 0;
+    padding: 5px 6px;
+}
+
+
+/* Habilidades */
+
+.skills {
+    background: coral;
+}
+
+.skills h2 {
+    margin: 0;
+    padding: 0 0 10px 0;
+    text-align: center;
+    font-size: 42px;
+    text-decoration: underline;
+    color: #fffafa;
+}
+
+.table {
+    margin: 20px 0 0 0;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+}
+
+.tools {
+    width: 24%;
+}
+
+.skillsUl {
+    display: flex;
+    padding: 10px 0;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.toolTittle {
+    display: flex;
+    align-items: center;
+}
+
+.toolTittle i {
+    font-size: 22px;
+    margin-bottom: 5px;
+    opacity: 90%;
+}
+
+.tool {
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    margin: 0 5px 5px 0;
+}
+
+.range {
+    width: 350px;
+    height: 12px;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 0 25px 0;
+}
+
+.rangeBG {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.rangeColor {
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    background-color: #db0404;
+}
+
+
+/* proyectos */
+
+.projects {
+    margin: 0 5%;
+}
+
+.projects h2 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 42px;
+    text-decoration: underline;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    width: 1fr;
+    height: auto;
+    margin: 10px;
+    background: rgb(238, 233, 233);
+}
+
+.card:hover {
+    box-shadow: 0 14px 28px rgba(230, 80, 11, 0.25), 0 10px 10px rgba(226, 101, 18, 0.22);
+    cursor: pointer;
+}
+
+.imgHolder {
+    text-align: center;
+}
+
+.imgCard {
+    margin: 15px 0 0 0;
+    width: 90%;
+    border-radius: 10px;
+}
+
+.imgCard:hover {
+    transition: all 0.3s ease-in-out;
+    width: 95%;
+}
+
+.cardTittle {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.separated {
+    width: 90%;
+    height: 3px;
+    border-radius: 5px;
+    background: coral;
+    opacity: 70%;
+    margin: auto;
+}
+
+.cardTools {
+    text-align: center;
+    width: 90%;
+    padding: 20px;
+    margin: auto;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.cardMI {
+    text-decoration: underline;
+    text-align: center;
+    margin: 15px;
+    color: coral;
+    overflow: hidden;
+}
+
+
+/* Contacto */
+
+.contact {
+    background-color: coral;
+}
+
+.contact h2 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 42px;
+    color: #fffafa;
+}
+
+.social_links2 {
+    margin: 30px 0 0 0;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.social_links2 a {
+    text-decoration: none;
+    color: rgb(252, 252, 252);
+    font-size: 40px;
+    margin: 0 10px 0 0;
+    padding: 5px 6px 30px 6px;
+}
+
+.contact p {
+    margin: 15px 0;
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.lineF {
+    background-color: white;
+    width: 50%;
+    margin: auto;
+    height: 5px;
+    border-radius: 10px;
+}
+
+.fContact {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.footer {
+    background: coral;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #f3f3f3;
+    padding: 5px 25px;
+}
+
+.nameFooter {
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.derechos {
+    color: #dfdfdf;
+    line-height: 60px;
+}
+
+.download_HV2 {
+    line-height: 60px;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 15px;
+    background: white;
+    color: black;
+    font-weight: bold;
+}
