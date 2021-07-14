@@ -23,7 +23,12 @@ body {
     justify-content: space-between;
     border-bottom: solid 1px black;
     padding: 5px;
-    background: #f3f3f3;
+    background: #eee4e100;
+    backdrop-filter: blur(10px);
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
 }
 
 .logo {
@@ -35,7 +40,7 @@ body {
     font-size: 24px;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    color: coral;
+    color: black;
     margin: 0;
     padding: 0;
 }
@@ -62,6 +67,13 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size: 17px;
     color: black;
+}
+
+.links a.active {
+    border-radius: 4px;
+    border-bottom: 1px solid rgba(255, 127, 80, 0.582);
+    box-shadow: 0 2px rgba(240, 123, 14, 0.8);
+    font-weight: bold;
 }
 
 
@@ -116,6 +128,11 @@ body {
     font-weight: bold;
 }
 
+.download_HV:hover {
+    background: rgb(253, 117, 68);
+    transition: 0.5s ease all;
+}
+
 .social_links {
     margin: 30px 0;
 }
@@ -126,6 +143,13 @@ body {
     font-size: 36px;
     margin: 0 10px 0 0;
     padding: 5px 6px;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.social_links a:hover {
+    color: rgb(253, 117, 68);
+    border-bottom: 1px solid rgb(253, 117, 68);
+    transition: 0.5s ease-in-out all;
 }
 
 
@@ -144,11 +168,65 @@ body {
     color: #fffafa;
 }
 
+
+/* .skills h2::after {
+    transition: 0.5s ease all;
+    visibility: visible;
+} */
+
 .table {
     margin: 20px 0 0 0;
     display: flex;
     justify-content: space-evenly;
     padding-bottom: 20px;
+}
+
+.listSkills {
+    display: flex;
+    border-bottom: 1px solid white;
+    width: 90%;
+    margin: 10px 0 20px 0;
+}
+
+.listSkills li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.listSkills li button {
+    margin: 0;
+}
+
+.listSkills li button.active {
+    background: #fff;
+    color: black;
+    margin: 0;
+}
+
+.front {
+    margin-right: 50px;
+}
+
+.back {
+    display: none;
+}
+
+.ftitulo {
+    display: flex;
+    justify-content: center;
+}
+
+.front h3 {
+    margin: 10px 0;
+    width: 30%;
+    border-bottom: 1px solid black;
+}
+
+.back h3 {
+    margin: 10px 0;
+    width: 30%;
+    border-bottom: 1px solid black;
 }
 
 .tools {
@@ -198,11 +276,25 @@ body {
     background-color: #fff;
 }
 
-.rangeColor {
+.rangeColor-90 {
     position: absolute;
-    width: 80%;
+    width: 90%;
     height: 100%;
-    background-color: #db0404;
+    background-color: #f1d028;
+}
+
+.rangeColor-70 {
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    background-color: #2451cc;
+}
+
+.rangeColor-60 {
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    background-color: #da2a2a;
 }
 
 
@@ -317,6 +409,13 @@ body {
     font-size: 40px;
     margin: 0 10px 0 0;
     padding: 5px 6px 5px 6px;
+    border-bottom: 1px solid coral;
+}
+
+.social_links2 a:hover {
+    color: rgb(226, 226, 226);
+    border-bottom: 1px solid rgb(226, 226, 226);
+    transition: 0.5s ease-in-out all;
 }
 
 .contact p {
@@ -352,6 +451,10 @@ body {
     padding: 20px;
     font-family: 'calibri', sans-serif;
 } */
+
+.formulario {
+    padding-bottom: 40px;
+}
 
 form {
     background: #fff;
