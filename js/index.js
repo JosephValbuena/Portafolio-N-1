@@ -157,5 +157,18 @@ $(document).ready(function() {
         $(".detail3").removeClass("active");
         $(".detail4").removeClass("active");
         $(".detail5").removeClass("active");
-    })
+    });
+
+    //BOTON HAMBURGUESA
+    // $(".menu-icon").css("display", "block");
+    $(".menu-icon").click(function() {
+
+        if ($(".links").hasClass("show")) {
+            $(".links").removeClass("show");
+        } else {
+            $(".links").addClass("show");
+        }
+
+    });
+
 });

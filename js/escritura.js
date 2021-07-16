@@ -10,7 +10,7 @@ var typed = new Typed('.typed', {
 });
 
 var typed2 = new Typed('.typed2', {
-    strings: ['Desarrollador Web Front-end Junior'],
+    strings: ['Desarrollador Web Fullstack Junior'],
     typeSpeed: 30,
     startDelay: 2500
 });

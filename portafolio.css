@@ -29,6 +29,7 @@ body {
     position: fixed;
     left: 0;
     top: 0;
+    flex-wrap: wrap;
     right: 0;
     z-index: 2;
 }
@@ -56,11 +57,20 @@ body {
     padding: 0;
 }
 
+.menu-icon {
+    display: none;
+}
+
 .links {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 20px 0 0;
+}
+
+.links ul li {
+    list-style: none;
+    display: inline;
 }
 
 .links a {
@@ -437,9 +447,10 @@ body {
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
     position: absolute;
     border-radius: 5px;
-    margin: 0 8%;
+    margin: 0 6%;
     justify-content: center;
-    height: 75vh;
+    height: 80vh;
+    flex-wrap: wrap;
     transition: .4s ease all;
     visibility: hidden;
     transform: scale(0.7);
@@ -492,17 +503,15 @@ body {
 }
 
 .detailPho img {
-    display: inline-block;
     width: 100%;
 }
 
 .detailPho video {
-    display: inline-block;
+    display: block;
     height: 65vh;
     width: auto;
     border-radius: 10px;
     margin: 0 70px 0 70px;
-    transition: 0.4s ease all;
     box-shadow: 0px 2px 10px 4px rgba(0, 0, 0, 0.89);
 }
 
@@ -813,26 +822,502 @@ button:hover {
 
 /*Media Queries*/
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1200px) {
+    /*------- SALUDO --------*/
+    .nombre {
+        height: auto
+    }
+    /*------- PROYECTOS --------*/
+    .detail1,
+    .detail2,
+    .detail3,
+    .detail4,
+    .detail5 {
+        overflow: auto;
+        border-radius: 2px;
+        margin: 0 4%;
+        height: 90vh;
+    }
+    .detailCont {
+        display: block;
+        padding: 10px;
+    }
+    .detailDes {
+        width: 100%;
+        margin: 5px 0 0 0;
+    }
+    .detailDes h2 {
+        font-size: 40px;
+        text-align: center;
+        width: 100%;
+    }
+    .detailPho {
+        text-align: center;
+    }
+    .detailPho video {
+        height: 60vh;
+        margin: auto;
+    }
+    .tecnologies {
+        display: block;
+        margin: 0 10px;
+    }
     form {
         width: 50%;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
+    /*------- SALUDO --------*/
+    .greeting {
+        margin: 80px 0 0 0;
+        align-items: center;
+        display: block;
+    }
+    .mi_foto {
+        margin-left: 100px;
+        width: 70%;
+        height: 70%;
+    }
+    .download_HV {
+        padding: 18px 18px;
+        font-size: 16px;
+    }
+    .social_links a {
+        font-size: 46px;
+        margin-right: 5px;
+    }
+    /*------- PROYECTOS --------*/
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .detail1,
+    .detail2,
+    .detail3,
+    .detail4,
+    .detail5 {
+        overflow: auto;
+        border-radius: 2px;
+        margin: 0 4%;
+        height: 90vh;
+    }
+    .detailCont {
+        display: block;
+        padding: 10px;
+    }
+    .detailDes {
+        width: 100%;
+        margin: 5px 0 0 0;
+    }
+    .detailDes h2 {
+        font-size: 40px;
+        text-align: center;
+        width: 100%;
+    }
+    .detailPho {
+        text-align: center;
+    }
+    .detailPho video {
+        height: 60vh;
+        margin: auto;
+    }
+    .tecnologies {
+        display: block;
+        margin: 0 10px;
+    }
     form {
-        width: 60%;
+        width: 50%;
+    }
+    /*------- FOOTER --------*/
+    .derechos {
+        display: none;
+    }
+    .seeCV {
+        text-align: center;
+    }
+    .download_HV2 {
+        padding: 4px;
+        border-radius: 8px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    /*------- SALUDO --------*/
+    .greeting {
+        display: block;
+        margin: 70px 0 0 0;
+    }
+    .mi_foto {
+        margin-left: 40px;
+        width: 80%;
+        height: 80%;
+    }
+    .presentation {
+        margin: 0;
+        text-align: center;
+    }
+    .helloW {
+        font-size: 24px;
+        height: auto;
+    }
+    .nombre {
+        font-size: 34px;
+        height: auto;
+    }
+    .profession {
+        font-size: 20px;
+        height: auto;
+    }
+    .description {
+        font-size: 20px;
+    }
+    .download_HV {
+        padding: 15px 15px;
+    }
+    .social_links a {
+        font-size: 40px;
+        margin-right: 5px;
+    }
+    /*------- HABILIDADES --------*/
+    .table {
+        display: block;
+        margin: 10px 10px 0 10px;
+    }
+    .tools {
+        display: none;
+    }
+    .listSkills {
+        width: 100%;
+    }
+    .listSkills li {
+        width: 100%;
+        margin-right: 5px;
+    }
+    .listSkills li button {
+        width: 100%;
+        padding: 5px;
+    }
+    .range {
+        width: 100%;
+        height: 12px;
+        margin: 0 0 25px 0;
+    }
+    .cards {
+        display: block;
+    }
+    .detail1,
+    .detail2,
+    .detail3,
+    .detail4,
+    .detail5 {
+        overflow: auto;
+        border-radius: 2px;
+        margin: 0 4%;
+        height: 90vh;
+    }
+    .detailCont {
+        display: block;
+        padding: 10px;
+    }
+    .detailDes {
+        width: 100%;
+        margin: 5px 0 0 0;
+    }
+    .detailDes h2 {
+        font-size: 20px;
+        text-align: center;
+        width: 100%;
+    }
+    .detailPho {
+        text-align: center;
+    }
+    .detailPho video {
+        height: 60vh;
+        margin: auto;
+    }
+    .tecnologies {
+        display: block;
+        margin: 0 10px;
+    }
+    /*------- CONTACTO --------*/
+    .contact h2 {
+        font-size: 38px;
+    }
+    form {
+        width: 80%;
+    }
+    /*------- FOOTER --------*/
+    .footer {
+        display: block;
+    }
+    .derechos {
+        font-size: 14px;
+    }
+    .seeCV {
+        text-align: center;
     }
 }
 
 @media screen and (max-width: 450px) {
+    /*------- SALUDO --------*/
+    .greeting {
+        display: block;
+    }
+    .mi_foto {
+        margin-left: 10px;
+        width: 90%;
+        height: 90%;
+    }
+    .presentation {
+        margin: 0;
+        text-align: center;
+    }
+    .helloW,
+    .nombre,
+    .profession {
+        height: auto;
+    }
+    /*------- HABILIDADES --------*/
+    .table {
+        display: block;
+        margin: 10px 10px 0 10px;
+    }
+    .tools {
+        display: none;
+    }
+    .listSkills {
+        width: 100%;
+    }
+    .listSkills li {
+        width: 100%;
+        margin-right: 5px;
+    }
+    .listSkills li button {
+        width: 100%;
+        padding: 5px;
+    }
+    .range {
+        width: 100%;
+        height: 12px;
+        margin: 0 0 25px 0;
+    }
+    .cards {
+        display: block;
+    }
+    .detail1,
+    .detail2,
+    .detail3,
+    .detail4,
+    .detail5 {
+        overflow: auto;
+        border-radius: 2px;
+        height: 90vh;
+    }
+    .detailCont {
+        display: block;
+        padding: 10px;
+    }
+    .detailDes {
+        width: 100%;
+        margin: 5px 0 0 0;
+    }
+    .detailDes h2 {
+        font-size: 20px;
+        text-align: center;
+        width: 100%;
+    }
+    .detailPho video {
+        height: 50vh;
+    }
+    .tecnologies {
+        display: block;
+        margin: 0 10px;
+    }
+    /*------- CONTACTO --------*/
+    .contact h2 {
+        font-size: 38px;
+    }
     form {
         width: 80%;
+    }
+    /*------- FOOTER --------*/
+    .footer {
+        display: block;
+    }
+    .derechos {
+        font-size: 14px;
+    }
+    .seeCV {
+        text-align: center;
     }
 }
 
 @media screen and (max-width: 300px) {
+    .nameHeader {
+        font-size: 20px;
+    }
+    /*------- SALUDO --------*/
+    .greeting {
+        display: block;
+        margin: 70px 0 0 0;
+    }
+    .mi_foto {
+        margin-left: 5px;
+        width: 90%;
+        height: 90%;
+    }
+    .presentation {
+        margin: 0;
+        text-align: center;
+    }
+    .helloW {
+        font-size: 24px;
+        height: auto;
+    }
+    .nombre {
+        font-size: 34px;
+        height: auto;
+    }
+    .profession {
+        font-size: 20px;
+        height: auto;
+    }
+    .description {
+        font-size: 16px;
+    }
+    .download_HV {
+        padding: 10px 5px;
+    }
+    .social_links a {
+        font-size: 30px;
+        margin-right: 5px;
+    }
+    /*------- HABILIDADES --------*/
+    .skills h2 {
+        font-size: 32px;
+    }
+    .table {
+        display: block;
+        margin: 20px 10px 0 30px;
+    }
+    .tools {
+        display: none;
+    }
+    .listSkills {
+        width: 100%;
+    }
+    .listSkills li {
+        width: 90%;
+        margin-right: 5px;
+    }
+    .listSkills li button {
+        width: 100%;
+        padding: 5px;
+    }
+    .range {
+        width: 220px;
+        height: 12px;
+        margin: 0 0 25px 0;
+    }
+    /*------- PROYECTOS --------*/
+    .projects h2 {
+        font-size: 32px;
+    }
+    .cards {
+        display: block;
+    }
+    .detail1,
+    .detail2,
+    .detail3,
+    .detail4,
+    .detail5 {
+        overflow: auto;
+        border-radius: 2px;
+    }
+    .detailCont {
+        display: block;
+        padding: 0;
+    }
+    .detailDes {
+        width: 100%;
+        margin: 5px 0 0 0;
+    }
+    .detailDes h2 {
+        font-size: 20px;
+        text-align: center;
+        width: 100%;
+    }
+    .detailPho video {
+        height: 20vh;
+    }
+    .tecnologies {
+        display: block;
+    }
+    /*------- CONTACTO --------*/
+    .contact h2 {
+        font-size: 32px;
+    }
+    .contact p {
+        font-size: 20px;
+    }
     form {
         width: 90%;
+    }
+    /*------- FOOTER --------*/
+    .footer {
+        display: block;
+    }
+    .derechos {
+        font-size: 14px;
+    }
+    .download_HV2 {
+        padding: 10px;
+    }
+}
+
+
+/*Medias que se repiten */
+
+@media screen and (max-width: 800px),
+screen and (max-width: 600px),
+screen and (max-width: 450px),
+screen and (max-width: 300px) {
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        margin: 5px 20px 0 0;
+        font-size: 30px;
+    }
+    .header {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .links {
+        transition: .5s ease all;
+        display: none;
+    }
+    .links.show {
+        transition: 1s ease all;
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background: rgb(41, 41, 41);
+        margin: 0;
+        padding: 0 15px;
+    }
+    .links.show ul {
+        margin-top: 5em;
+    }
+    .links.show ul li a {
+        color: white;
+    }
+    .links.show ul li {
+        margin: 30px 0;
+    }
+    .links ul li {
+        display: block;
     }
 }
