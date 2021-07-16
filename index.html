@@ -36,10 +36,10 @@
             <p class="description">Estudiante de Tecnología en Informática, apasionado de los computadores, el desarollo web y la tecnología en general; Tengo conocimientos en herramientas Web tales como HTML, CSS, Javascript, Angular, entre otras.</p>
             <a href="#" class="download_HV">REVISAR CURRÍCULUM</a>
             <div class="social_links">
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fas fa-envelope"></i></a>
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/JosephValbuena" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto: josvalk775@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.facebook.com/joseph.valbuena.71/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/joseph_valbuena/" target="_blank"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
     </div>
@@ -208,9 +208,96 @@
 
     <div class="projects" id="projects">
         <h2>Proyectos</h2>
+        <div class="overlay ">
+            <div class="detail1">
+                <div class="cerrar">
+                    <i class="fas fa-times closeDetail"></i>
+                </div>
+                <div class="detailCont">
+                    <div class="detailPho">
+                        <img src="imgs/vProyecto1.png" alt="Imagen de Proyecto 1 - Portafolio">
+                    </div>
+                    <div class="detailDes">
+                        <h2>Visual For you</h2>
+                        <span class="dTecnology">Tecnologías Utilizadas en el proyecto: </span><br>
+                        <div class="tecnologies">
+                            <p class="dSquareT">HTML</p>
+                            <p class="dSquareT">CSS</p>
+                        </div>
+                        <p class="detailP">Landing Page realizada como producto mínimo viable de una idea de emprendimiento pensada por mí para una asignatura de la universidad. Tiene todo lo que se requiere en una landing page como enlaces, contenido, acerca de, y contacto.
+                        </p>
+                        <div class="dLinks">
+                            <p>Lo puedes encontrar en: </p>
+                            <a class="detailsLinks" href="#"><i class="fab fa-github"></i></a>
+                            <a class="detailsLinks" href="#"><i class="fas fa-laptop"></i></a>
 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="detail2">
+                <div class="cerrar">
+                    <i class="fas fa-times closeDetail"></i>
+                </div>
+                <div class="detailCont">
+                    <div class="detailPho">
+                        <img src="imgs/vProyecto2.png" alt="Imagen de Proyecto 2 - Portafolio">
+                    </div>
+                    <div class="detailDes">
+                        <h2>SpotiApp</h2>
+                        <span class="dTecnology">Tecnologías Utilizadas en el proyecto: </span><br>
+                        <div class="tecnologies">
+                            <p class="dSquareT">Angular</p>
+                            <p class="dSquareT">Typescript</p>
+                            <p class="dSquareT">HTML</p>
+                            <p class="dSquareT">CSS</p>
+                            <p class="dSquareT">REST API</p>
+                            <p class="dSquareT">Boostrap</p>
+                        </div>
+                        <p class="detailP">Imitación de la aplicación de Spotify realizada con el framework Angular en su versión 12 y obteniendo la Información directamente desde la API Rest de Spotify. Para su visual se utilizó el framework de CSS BOOTSTRAP.
+                        </p>
+                        <div class="dLinks">
+                            <p>Lo puedes encontrar en: </p>
+                            <a class="detailsLinks" href="#"><i class="fab fa-github"></i></a>
+                            <a class="detailsLinks" href="#"><i class="fas fa-laptop"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="detail3">
+                <div class="cerrar">
+                    <i class="fas fa-times closeDetail"></i>
+                </div>
+                <div class="detailCont">
+                    <div class="detailPho">
+                        <!-- <img src="imgs/WhatsApp Video 2021-07-16 at 12.23.01 AM.mp4" alt="Imagen de Proyecto 3 - Portafolio"> -->
+                        <video src="imgs/vProyecto3.mp4" controls></video>
+                    </div>
+                    <div class="detailDes">
+                        <h2>App Movil de Tareas</h2>
+                        <span class="dTecnology">Tecnologías Utilizadas en el proyecto: </span><br>
+                        <div class="tecnologies">
+                            <p class="dSquareT">Ionic</p>
+                            <p class="dSquareT">Angular</p>
+                            <p class="dSquareT">Typescript</p>
+                            <p class="dSquareT">Boostrap</p>
+                        </div>
+                        <p class="detailP">Aplicación web para móvil creada con el framework Ionic, que junto con Angular y sus módulos se consiguió este resultado de un CRUD para tareas del día a día, esta aplicación es totalmente descargable y como se puede ver está funcionando
+                            en un dispositivo móvil real; Su diseño fue realizado con ayuda del Framework Boostrap.
+                        </p>
+                        <div class="dLinks">
+                            <p>Lo puedes encontrar en: </p>
+                            <a class="detailsLinks" href="#"><i class="fab fa-github"></i></a>
+                            <a class="detailsLinks" href="#"><i class="fas fa-laptop"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="cards">
-            <div class="card">
+            <div class="card" id="card1">
                 <div class="imgHolder">
                     <img class="imgCard" src="imgs/imgProyecto1.png" alt="Proyecto Web">
                 </div>
@@ -218,8 +305,10 @@
                 <div class="separated"></div>
                 <p class="cardTools">HTML, CSS, JAVASCRIPT, GIT Y GITHUB</p>
                 <p class="cardMI">Clickea para más Información</p>
+
             </div>
-            <div class="card">
+
+            <div class="card" id="card2">
                 <div class="imgHolder">
                     <img class="imgCard" src="imgs/imgProyecto2.png" alt="Proyecto Web">
                 </div>
@@ -228,17 +317,17 @@
                 <p class="cardTools">HTML, CSS, ANGULAR, TYPESCRIPT, BOOTSTRAP, API REST, GIT Y GITHUB</p>
                 <p class="cardMI">Clickea para más Información</p>
             </div>
-            <div class="card">
+            <div class="card" id="card3">
                 <div class="imgHolder">
-                    <img class="imgCard" src="imgs/imgProyecto1.png" alt="Proyecto Web">
+                    <img class="imgCard" src="imgs/imgPortfolio3.jpg" alt="Proyecto Web">
                 </div>
-                <p class="cardTittle">Inventario JG.COM</p>
+                <p class="cardTittle">App de Tareas</p>
                 <div class="separated"></div>
-                <p class="cardTools">HTML, CSS, JAVASCRIPT, PHP, GIT Y GITHUB</p>
+                <p class="cardTools">IONIC, ANGULAR, TYPESCRIPT, BOOTSTRAP</p>
                 <p class="cardMI">Clickea para más Información</p>
             </div>
 
-            <div class="card">
+            <!-- <div class="card" id="card4">
                 <div class="imgHolder">
                     <img class="imgCard" src="imgs/imgProyecto1.png" alt="Proyecto Web">
                 </div>
@@ -248,7 +337,7 @@
                 <p class="cardMI">Clickea para más Información</p>
             </div>
 
-            <div class="card">
+            <div class="card" id="card5">
                 <div class="imgHolder">
                     <img class="imgCard" src="imgs/imgProyecto5.png" alt="Proyecto Web">
                 </div>
@@ -256,21 +345,22 @@
                 <div class="separated"></div>
                 <p class="cardTools">HTML, CSS, ANGULAR - IONIC, TYPESCRIPT, GIT Y GITHUB</p>
                 <p class="cardMI">Clickea para más Información</p>
-            </div>
+            </div> -->
         </div>
     </div>
     <!--<div class="recomendations"></div>-->
 
     <div id="contact" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%; margin-top: 60px"><path d="M0.00,49.98 C60.66,-49.83 354.12,135.69 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: coral;"></path></svg></div>
+
     <div class="contact">
         <h2>¡Contáctame!</h2>
         <div class="lineF"></div>
         <p>Puedes charlar conmigo a través de cualquiera de mis redes sociales,</p>
         <div class="social_links2">
-            <a href="#"><i class="fab fa-github"></i></a>
-            <a href="#"><i class="fas fa-envelope"></i></a>
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/JosephValbuena" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="mailto: josvalk775@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.facebook.com/joseph.valbuena.71/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/joseph_valbuena/" target="_blank"><i class="fab fa-instagram"></i></a>
         </div>
 
         <p>Ó Dejarme tus datos aquí y te contactaré pronto</p>

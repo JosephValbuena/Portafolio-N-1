@@ -6,12 +6,12 @@ $(document).ready(function() {
         var sv = $(document).scrollTop();
         // console.log(sv);
 
-        if (sv >= 0 && sv < 557) {
+        if (sv >= 0 && sv < 499) {
             $(".saludo").addClass("active");
             $(".habilidades").removeClass("active");
             $(".proyectos").removeClass("active");
             $(".contact1").removeClass("active");
-        } else if (sv >= 558 && sv < 1349) {
+        } else if (sv >= 500 && sv < 1349) {
             $(".saludo").removeClass("active");
             $(".habilidades").addClass("active");
             $(".proyectos").removeClass("active");
@@ -97,4 +97,65 @@ $(document).ready(function() {
         $(".buttonLangs").addClass("active");
         $(".langs").css("display", "block");
     });
+
+    // --------- Abrir y Cerrar Popup ---------
+
+    $("#card1").click(function() {
+        $(".overlay").addClass("active");
+        $(".detail1").addClass("active");
+        $(".detail2").removeClass("active");
+        $(".detail3").removeClass("active");
+        $(".detail4").removeClass("active");
+        $(".detail5").removeClass("active");
+
+    });
+
+    $("#card2").click(function() {
+        $(".overlay").addClass("active");
+        $(".detail1").removeClass("active");
+        $(".detail2").addClass("active");
+        $(".detail3").removeClass("active");
+        $(".detail4").removeClass("active");
+        $(".detail5").removeClass("active");
+
+    });
+
+    $("#card3").click(function() {
+        $(".overlay").addClass("active");
+        $(".detail1").removeClass("active");
+        $(".detail2").removeClass("active");
+        $(".detail3").addClass("active");
+        $(".detail4").removeClass("active");
+        $(".detail5").removeClass("active");
+
+    });
+
+    $("#card4").click(function() {
+        $(".overlay").addClass("active");
+        $(".detail1").removeClass("active");
+        $(".detail2").removeClass("active");
+        $(".detail3").removeClass("active");
+        $(".detail4").addClass("active");
+        $(".detail5").removeClass("active");
+
+    });
+
+    $("#card5").click(function() {
+        $(".overlay").addClass("active");
+        $(".detail1").removeClass("active");
+        $(".detail2").removeClass("active");
+        $(".detail3").removeClass("active");
+        $(".detail4").removeClass("active");
+        $(".detail5").addClass("active");
+
+    });
+
+    $(".closeDetail").click(function() {
+        $(".overlay").removeClass("active");
+        $(".detail1").removeClass("active");
+        $(".detail2").removeClass("active");
+        $(".detail3").removeClass("active");
+        $(".detail4").removeClass("active");
+        $(".detail5").removeClass("active");
+    })
 });
